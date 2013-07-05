@@ -65,7 +65,6 @@ module.exports =
 #    host:'192.168.90.241'
 #    port:'8088'
 #    method:'GET'
-#    path:'https://docs.google.com/spreadsheet/pub?key=0Ap0bfNc2zisXdDlOUmxYRUpDRXR5bmdRckJKMWtuSUE&single=true&gid=0&range=B2%3AC9999&output=txt'
 #  }
 #
 #  module.exports.init(option).start()
@@ -78,8 +77,6 @@ module.exports =
 #    host:'192.168.90.241'
 #    port:'8088'
 #    method:'GET'
-##    path:'https://docs.google.com/spreadsheet/pub?key=0Ap0bfNc2zisXdDlOUmxYRUpDRXR5bmdRckJKMWtuSUE&single=true&gid=0&range=B2%3AC9999&output=csv'
-#    path:'https://docs.google.com/spreadsheet/pub?key=0Ap0bfNc2zisXdDlOUmxYRUpDRXR5bmdRckJKMWtuSUE\&single=true\&gid=0\&range=A2%3AB3000\&output=csv'
 #  }
 #
 #  module.exports.init(option,back).start()
