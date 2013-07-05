@@ -164,3 +164,18 @@ do ->
   }
 
   google_doc.init(option,back).start()
+
+
+###   AS3 读取amf后得到的是一个byteArray类型。
+      var object:Object = {a:1, b:"2", c:[3,4], d:5.53};
+			var byteArray:ByteArray = new ByteArray();
+			byteArray.writeObject(object);
+
+			var s:String = byteArray.toString();
+
+			byteArray = new ByteArray();
+			byteArray.writeMultiByte(s, s);
+
+			byteArray.position = 0;
+			trace(byteArray.readObject().a);
+###
