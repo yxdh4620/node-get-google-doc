@@ -1,0 +1,30 @@
+{
+    "name" : "node-get-google-doc",
+    "version" : "0.0.1",
+    "description" : "用了读取google doc 上的文件",
+    "main" : "./main.js",
+    "dependencies" : {
+        "logger" : "https://github.com/SGF-Games/node-dev-logger.git"
+    },
+    "devDependencies" : {
+        "amf": "https://github.com/timwhitlock/node-amf.git",
+        "commander": ">=1.0.1",
+        "lazy": ">=1.0.8",
+        "mocha": ">=1.3.2",
+        "should": ">=1.1.0"
+    },
+    "scripts" : {
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yxdh4620/node-get-google-doc"
+    },
+    "keywords": ["node", "express", "runway"],
+    "author" : {
+        "name" : "YuanXiangDong",
+        "email" : "yxdh4620@gmail.com",
+        "url" : ""
+    },
+    "license" : "XD.Y",
+    "engine" : ["node >=0.8.0"]
+}
