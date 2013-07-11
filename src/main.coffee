@@ -23,17 +23,16 @@ options = {
 
 module.exports =
 
-  init : (option, callback) ->
+  init : (option) ->
     if option?
       logger.info "[get-google-doc:main:init:28]: init options"
       options['host'] = option['host'] if option['host'] and option['host'].trim().length>0
       options['port'] = option['port'] if option['port'] and option['port'].trim().length>0
       options['method'] = option['method'] if option['method'] and option['method'].trim().length>0
       options['path'] = option['path'] if option['path'] and option['path'].trim().length>0
-#    console.dir options
     logger.info "[get-google-doc:main:init:34]: options:#{options.toString()}"
 
-    start : () ->
+    start : (callback) ->
       data = ''
       req = http.get(options, (res) ->
         logger.info("[get-google-doc:main:init:34]:statusCode: ", res.statusCode)
